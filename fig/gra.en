@@ -1,0 +1,16 @@
+﻿>
+
+incorrect syntax: x is not an infix operator
+f(x)=3x^
+      ^
+
+>::f(x)=3*x^2
+
+                                       2
+                             f(x) = 3 x
+
+>plot2d("3*x^2"):
+ %image% gra-001.png
+>plot2d("abs(x)"):
+ %image% gra-002.png
+>

@@ -1,0 +1,31 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{eumat}
+
+\begin{document}
+\begin{eulernotebook}
+\begin{euleroutput}
+  
+  incorrect syntax: x is not an infix operator
+  f(x)=3x^
+        ^
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>::f(x)=3*x^2
+\end{eulerprompt}
+\begin{euleroutput}
+  
+                                         2
+                               f(x) = 3 x
+  
+\end{euleroutput}
+\begin{eulerprompt}
+>plot2d("3*x^2"):
+\end{eulerprompt}
+\eulerimg{34}{images/gra-001.png}
+\begin{eulerprompt}
+>plot2d("abs(x)"):
+\end{eulerprompt}
+\eulerimg{34}{images/gra-002.png}
+\end{eulernotebook}
+\end{document}
