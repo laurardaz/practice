@@ -137,13 +137,13 @@ $$n_0=[\frac{1}{\varepsilon}]+1$$
 
 Покажем сначала, что $\{e_n\}$ представляет собой монотонно возрастающую последовательность. Согласно биному Ньютона, полагая $a=1, b=\frac{1}{n}$, получим
 
-$$e_n=(1+\frac{1}{n})^n=1+n\cdot\frac{1}{n}+\frac{n(n-1)}{2!}\cdot\frac{1}{n^2}+\frac{n(n-1)(n-2)}{3!}\cdot\frac{1}{n^3}+\dots+\frac{1}{n^n}=$$ $$=2+\frac{1}{2!}(1-\frac{1}{n})+\frac{1}{3!}(1-\frac{1}{n})(1-\frac{2}{n})+\dots+\frac{1}{n!}(1-\frac{1}{n!}\dots(1-\frac{n-1}{n}).$$
+$$e_n=\left(1+\frac{1}{n}\right)^n=1+n\cdot\frac{1}{n}+\frac{n(n-1)}{2!}\cdot\frac{1}{n^2}+\frac{n(n-1)(n-2)}{3!}\cdot\frac{1}{n^3}+\dots+\frac{1}{n^n}=$$ $$=2+\frac{1}{2!}\left(1-\frac{1}{n}\right)+\frac{1}{3!}\left(1-\frac{1}{n}\right)\left(1-\frac{2}{n}\right)+\dots+\frac{1}{n!}\left(1-\frac{1}{n!}\right)\dots\left(1-\frac{n-1}{n}\right).$$
 
 Аналогично,
-$$e_n+1=(1+\frac{1}{n+1})^N+1=2+\frac{1}{2!}(1-\frac{1}{n+1})+\frac{1}{3!}(1-\frac{1}{n+1})(1-\frac{2}{n+1})+\dots$$
+$$e_n+1=\left(1+\frac{1}{n+1}\right)^N+1=2+\frac{1}{2!}\left(1-\frac{1}{n+1}\right)+\frac{1}{3!}\left(1-\frac{1}{n+1}\right)\left(1-\frac{2}{n+1}\right)+\dots$$
 
 Далее докажем, что последовательность $\{e_n\}$ является ограниченной. Действительно, первый член любой монотонно возрастающей последовательности является ее наибольшей нижней границей и, таким образом, $e_n\geqslant 2$ для всех натуральных значений $n$. Перейдем к доказательству существования верхней границы. Очевидно, что
-$$e_n=2+\frac{1}{2!}(1-\frac{1}{n})+\frac{1}{3!}(1-\frac{1}{n})(1-\frac{2}{n})+\dots+\frac{1}{n!}(1-\frac{1}{n})\dots(1-\frac{n-1}{n})<$$ $$<2+\frac{1}{2!}+\frac{1}{3!}+\dots+\frac{1}{n!}.$$
+$$e_n=2+\frac{1}{2!}\left(1-\frac{1}{n}\right)+\frac{1}{3!}\left(1-\frac{1}{n}\right)\left(1-\frac{2}{n}\right)+\dots+\frac{1}{n!}\left(1-\frac{1}{n}\right)\dots\left(1-\frac{n-1}{n}\right)<$$ $$<2+\frac{1}{2!}+\frac{1}{3!}+\dots+\frac{1}{n!}.$$
 
 Кроме того, $\frac{1}{k!}<\frac{1}{2^k}$ для всех $k>3$. Тогда
 $$\frac{1}{4!}+\frac{1}{5!}+\dots+\frac{1}{n!}<\frac{1}{2^4}+\frac{1}{2^5}+\dots+\frac{1}{2^n}.$$
@@ -187,33 +187,110 @@ $$\{f(x_n')\}\rightarrow A_1\{f(x_n)\}\rightarrow A_2$$
 $$x_n':\sin\frac{1}{x_n'}=0\Leftrightarrow\frac{1}{x_n'}=\pi n\Longrightarrow x_n'=\frac{1}{\pi n} \xrightarrow[n\neq 0]{n\rightarrow \infty}0$$
 $$x_n'=\frac{1}{\pi n}\rightarrow0:f(x_n')=0\xrightarrow{n\neq0}0$$
 $$x_n:\sin\frac{1}{x_n}=1\Leftrightarrow\frac{1}{x_n}=\frac{\pi}{2}+2\pi n \Longrightarrow x_n=\frac{1}{\frac{\pi}{2}+2\pi n}\xrightarrow[n\neq0]{n\rightarrow\infty}0$$
-$$x_n=\frac{1}{\frac{\pi}{2}+2\pi n}\rightarrow0:f(x_n)=1\rightarrow1$$
+$$x_n=\frac{1}{\frac{\pi}{2}+2\pi n}\rightarrow0:f(x_n)=1\rightarrow1$$как считать пределы
 
 Последовательность по Гейне не имеет предела.
 \end{example}
 
 \section{Односторонние пределы}
 
+\begin{example}
+Найти односторонние пределы функции $f(x)=\frac{1}{x}$ при $x\rightarrow0$
+
+\emph{Решение.} Правый предел:
+$$\lim\limits_{x\to 0+0}\frac{1}{x}=\lim\limits_{x\to 0+}\frac{1}{x}=f(0+0)=\frac{1}{0+0}=\frac{1}{0}=+\infty;$$
+
+Левый предел: 
+$$\lim\limits_{x\to 0-0}\frac{1}{x}=\lim\limits_{x\to 0-}\frac{1}{x}=f(0-0)=\frac{1}{0-0}=\frac{1}{-0}=-\infty.$$
+\end{example}
+
 \section{Предел функции при $x\to\infty$}
 
+\begin{example}
+Найти предел функции $f(x)=\frac{1}{x}$, при $x\rightarrow \infty$.
+
+\emph{Решение.} Подставляем вместо $x$ бесконечность. Получаем, что последовательность значений функции является бесконечно малой величиной и поэтому имеет предел, равный нулю:
+$$\lim\limits_{x\to \infty}\frac{1}{x}=\frac{1}{\infty}=0.$$
+
+\end{example}
+
+
 \section{Бесконечно большая функция}
+
+Функция $y=f(x)$, заданная на всей числовой прямой, называется \emph{бесконечно большой при} $x\rightarrow \infty$, если для любого числа $M>0$ найдется такое число $N=N(M)>0$, что при всех $x$, удовлетворяющих неравенству $|x|>N$, выполняется неравенство $|f(x)|>M$. 
+\begin{example}
+
+a) Функция $f(x)=\frac{1}{x}$ - является бесконечно большой при $x\rightarrow 0$;
+
+б) Функция $f(x)=x$ - является бесконечно большой при $x\rightarrow \infty$.
+
+\end{example}
 
 
 
 \chapter{Бесконечно малые функции}
 
-\section{Определения и основные теоремы}
+Функция $y=f(x)$ называется \emph{бесконечно малой при} $x\rightarrow x_0$, если $$\lim\limits_{x\to x_0}f(x)=0.$$
+\begin{example}
+а) Функция $f(x)=x$ является бесконечно малой при $x\rightarrow 0$, поскольку ее предел в точке $a=0$ равен нулю. Согласно теореме о связи двустороннего предела с односторонними эта функция бесконечно малая как при $x\rightarrow+0$, так и при $x\rightarrow -0$;
+
+б) Функция $f(x)=\frac{1}{x^2}$ - является бесконечно малой при $x\rightarrow \infty$ (а также при $x\rightarrow+\infty$ и при $x\rightarrow -\infty$.
+\end{example}
+
 
 \section{Связь между функцией, ее пределом и бесконечно малой функцией}
+\begin{example}Доказать, что $\lim\limits_{x\to1}(x+5)=6$
+\begin{proof}
+Функцию $x+5$, стоящую под знаком предела, можно представить следующим образом:
+$$x+5=6+(x-1)$$
+где функция $\alpha(x)=x-1$ является бесконечно малой функцией при $x\rightarrow1$, поскольку 
+$$\lim\limits_{x\to1}\alpha(x)=\lim\limits_{x\to1}(x-1)=0$$
+
+Следовательно, согласно теореме о связи между функцией, ее пределом и бесконечно малой функцией, делаем вывод, что 
+$$\lim\limits_{x\to 1}(x+5)=6$$
+
+Что и требовалось доказать.
+
+\end{proof}
+
+\end{example}
 
 \section{Основные теоремы о пределах}
+\begin{example}
+$\lim\limits_{x\to 10}13=13$
+\end{example}
 
-\section{Признаки существования пределов}
+\begin{example}
+$\lim\limits_{x\to 0}(x^2-3x+2)=\lim\limits_{x\to 0}x^2-\lim\limits_{x\to 0}3x+\lim\limits_{x\to 0}2=0^2-3\cdot0+2=2$	
+\end{example}
+
+\begin{example}
+$\lim\limits_{x\to 0}(x^2\cdot \sin x)= \lim\limits_{x\to 0}x^2\cdot\lim\limits_{x \to 0}\sin x =0^2\cdot\sin 0=0$
+\end{example}
+
+\begin{example}
+$\lim\limits_{x\to 1}2x^2=2\lim\limits_{x\to 1}x^2=2\cdot 1^2=2$
+\end{example}
+
+\begin{example}
+$$\lim\limits_{x\to 2}\frac{x+1}{x^2-3}=\frac{\lim\limits_{x\to 2}(x+1)}{\lim\limits_{x\to 2}(x^2-3)}=\frac{2+1}{2^2-3}=\frac{3}{4-3}=\frac{3}{1}=3$$
+\end{example}
+
 
 \section{Первый замечательный предел}
+\begin{example}
+ $$\lim\limits_{x\to 0}\frac{\sin7x}{3x}=\frac{0}{0}=\lim\limits_{s\to 0}\frac{\sin7x}{3\cdot\frac{1}{7}\cdot7x}=\frac{1}{\frac{3}{7}}=\frac{7}{3}$$
+\end{example}
+
+\begin{example}
+$$\lim\limits_{x\to 0}\frac{5x^2}{\sin^2\frac{x}{2}}=\frac{0}{0}=\lim\limits_{x\to 0}\frac{5x\cdot x}{\sin\frac{x}{2}\cdot\sin\frac{x}{2}}=\lim\limits_{x\to 0}\frac{5\cdot2\cdot2\cdot\frac{x}{2}\cdot\frac{x}{2}}{\sin\frac{x}{2}\cdot\sin\frac{x}{2}}=5\cdot2\cdot2=20$$
+\end{example}
+
 
 \section{Второй замечательный предел}
-
+\begin{example}
+$$\lim\limits_{x\to\infty}\left(\frac{x-2}{x+1}\right)^{2x+3}=\left(\frac{\infty}{\infty}\right)^\infty= \lim\limits_{x\to\infty}\left(\frac{x+1-3}{x+1}\right)^{2x+3}=\lim\limits_{x\to\infty}\left(1-\frac{3}{x+1}\right)^{2x+3}=$$ $$=\lim\limits_{x\to\infty}\left(1+\frac{1}{\frac{x+1}{-3}}\right)^{2x+3}=1^\infty=\lim\limits_{x\to\infty}\left(\left(1+\frac{1}{\frac{x+1}{-3}}\right)^{\frac{x+1}{-3}}\right)^{\frac{-3}{x+1}\cdot(2x+3)}=e^{-3\lim\limits_{x\to\infty}\frac{2x+3}{x+1}}=$$ $$=e^{\frac{\infty}{\infty}}=e^{-3\lim\limits_{x\to\infty}\frac{\frac{2x+3}{x}}{\frac{x+1}{x}}}=e^{-3\cdot2}=e^{-6}$$
+\end{example}
 
 
 \chapter{Эквивалентные бесконечно малые функции}
